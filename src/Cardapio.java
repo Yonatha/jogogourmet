@@ -30,7 +30,6 @@ public class Cardapio {
         for (String x : cardapio.keySet()) {
             Prato prato = this.getPrato(x);
             if (prato.getMassa().equals(tipo)) {
-                //System.out.println(prato.getNome());
                 pratos.put(prato.getNome(), prato);
             }
         }
@@ -39,13 +38,6 @@ public class Cardapio {
 
     public void adicionarPrato(String pratoNome, Prato prato) {
         this.cardapio.put(pratoNome, prato);
-    }
-
-    protected Prato getRandomPrato2(Map<String, Prato> c) {
-        Random generator = new Random();
-        Prato[] values = c.values().toArray(new Prato[0]);
-        Prato randomValue = values[generator.nextInt(values.length)];
-        return randomValue;
     }
 
     /**
@@ -77,15 +69,4 @@ public class Cardapio {
 
         return treeMap.entrySet().stream().findFirst().get().getValue();
     }
-    public static <K, V> void printMap(Map<K, V> map) {
-        for (Map.Entry<K, V> entry : map.entrySet()) {
-
-            Prato x = (Prato) entry.getValue();
-
-            System.out.println("Key : " + entry.getKey()
-                    + " Value : " + x.getNome());
-        }
-    }
 }
-
-

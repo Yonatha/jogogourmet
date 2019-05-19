@@ -37,7 +37,7 @@ public class Prato implements Comparable<Prato> {
         if(gosto.equals(Constantes.BOM.gettexto())){
             scoreAtual.setBom(scoreAtual.getBom() + 1);
         } else if(gosto.equals(Constantes.OTIMO.gettexto())){
-            scoreAtual.setOtimo(scoreAtual.getOtimo() + 1);
+            scoreAtual.setOtimo(scoreAtual.getOtimo() + 2);
         }
     }
 

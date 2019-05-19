@@ -28,7 +28,6 @@ public class Main {
                 String gosto = JOptionPane.showInputDialog(nomePrato + " é _________ mas " + pratoSugerido.getNome() +" não.").toLowerCase();
 
                 // Verifica se o prato informado já existia no cardápio
-
                 if(cardapioAtual.containsKey(nomePrato)){
                     Prato pratoEncontrado = cardapioAtual.get(nomePrato);
                     pratoEncontrado.incrementarScore(gosto);
@@ -43,11 +42,6 @@ public class Main {
                 pratoSugerido.decrementarScore(gosto);
             }
 
-            for (String x : cardapio.ler().keySet()) {
-                Prato p = cardapio.getPrato(x);
-                //System.out.println(String.format("%s Massa? %s Bom: %s Ótimo: %s", p.getNome(), p.getMassa(), p.getScore().getBom(), p.getScore().getOtimo()));
-            }
-
             cardapio.orderCardapio();
 
             Integer continuar = JOptionPane.showConfirmDialog(null, Constantes.PLAY_AGAIN.gettexto(), APP_TITLE, JOptionPane.YES_NO_OPTION);
@@ -57,7 +51,6 @@ public class Main {
                 playAgain = false;
             }
         }
-
         System.exit(0);
     }
 }
