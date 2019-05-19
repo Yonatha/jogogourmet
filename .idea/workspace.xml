@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7613f36f-59a7-42e8-95ba-16b204598a95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jogoGourmet_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Jogogourmet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Cardapio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Constantes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/META-INF/HelloWorld.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Prato.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Score.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cardapio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cardapio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prato.java" afterDir="false" />
-    </list>
+    <list default="true" id="7613f36f-59a7-42e8-95ba-16b204598a95" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            <state relative-caret-position="171">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -205,6 +190,12 @@
               <item name="Jogo1" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Jogo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jogo1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -321,7 +312,7 @@
       <workItem from="1558135630692" duration="150000" />
       <workItem from="1558135831752" duration="7747000" />
       <workItem from="1558188267582" duration="17495000" />
-      <workItem from="1558257021833" duration="6643000" />
+      <workItem from="1558257021833" duration="6903000" />
     </task>
     <task id="LOCAL-00001" summary="Obtendo o prato com maior score">
       <created>1558262258403</created>
@@ -330,14 +321,22 @@
       <option name="project" value="LOCAL" />
       <updated>1558262258403</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Builld jar config">
+      <created>1558269742858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558269742858</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36828000" />
+    <option name="totallyTimeSpent" value="37088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.152349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -375,7 +374,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Obtendo o prato com maior score" />
-    <option name="LAST_COMMIT_MESSAGE" value="Obtendo o prato com maior score" />
+    <MESSAGE value="Builld jar config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Builld jar config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -539,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        <state relative-caret-position="171">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -552,14 +552,7 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor>
-            <show-content>
-              <type id="javaee-facet-resources" />
-              <type id="library" />
-              <type id="artifact" />
-              <type id="jpa-descriptors" />
-            </show-content>
-          </artifact-editor>
+          <artifact-editor />
           <last-edited>jogoGourmet:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
