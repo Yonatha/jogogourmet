@@ -1,6 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class Cardapio {
     Map<String, Prato> cardapio = new HashMap<String, Prato>();
@@ -43,7 +41,7 @@ public class Cardapio {
         this.cardapio.put(pratoNome, prato);
     }
 
-    protected Prato getRandomPrato(Map<String, Prato> c) {
+    protected Prato getRandomPrato2(Map<String, Prato> c) {
         Random generator = new Random();
         Prato[] values = c.values().toArray(new Prato[0]);
         Prato randomValue = values[generator.nextInt(values.length)];
@@ -59,6 +57,34 @@ public class Cardapio {
         cardapio.entrySet().stream()
                 .sorted(Map.Entry.<String, Prato>comparingByValue().reversed())
                 .limit(1);
+    }
+
+    public Prato getRandomPrato() {
+        Map<Integer, Prato> unsortMap = new HashMap<>();
+        for (Map.Entry<String, Prato> entry : this.cardapio.entrySet()) {
+            unsortMap.put(entry.getValue().getScore().getTotal(), entry.getValue());
+        }
+        Map<Integer, Prato> treeMap = new TreeMap<>(
+                new Comparator<Integer>() {
+
+                    @Override
+                    public int compare(Integer o1, Integer o2) {
+                        return o2.compareTo(o1);
+                    }
+
+                });
+        treeMap.putAll(unsortMap);
+
+        return treeMap.entrySet().stream().findFirst().get().getValue();
+    }
+    public static <K, V> void printMap(Map<K, V> map) {
+        for (Map.Entry<K, V> entry : map.entrySet()) {
+
+            Prato x = (Prato) entry.getValue();
+
+            System.out.println("Key : " + entry.getKey()
+                    + " Value : " + x.getNome());
+        }
     }
 }
 

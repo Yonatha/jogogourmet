@@ -15,12 +15,10 @@ public class Main {
             int opMassa = JOptionPane.showConfirmDialog(null, Constantes.ISMASSA.gettexto(), APP_TITLE, JOptionPane.YES_NO_OPTION);
             Boolean massa = false;
             if (opMassa == JOptionPane.YES_OPTION) {
-                // busca apenas pratos de massa no cardapio
-                // Set massa to find
                 massa = true;
             }
             Map<String, Prato> cardapioAtual = cardapio.ler(massa);
-            Prato pratoSugerido = cardapio.getRandomPrato(cardapioAtual);
+            Prato pratoSugerido = cardapio.getRandomPrato();
             int optPratoSugerido = JOptionPane.showConfirmDialog(null, Constantes.QUESTION_SUGGESTED.gettexto()  + pratoSugerido.getNome(), APP_TITLE, JOptionPane.YES_NO_OPTION);
             if (optPratoSugerido == JOptionPane.YES_OPTION) {
                 JOptionPane.showMessageDialog(null, Constantes.I_GOT_IT.gettexto());
